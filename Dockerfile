@@ -15,7 +15,7 @@ RUN apt-get update && \
 
 EXPOSE 19132/udp
 
-VOLUME ["/data"]
+RUN mkdir /data
 
 WORKDIR /data
 
