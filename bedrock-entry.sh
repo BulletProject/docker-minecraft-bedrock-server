@@ -123,5 +123,9 @@ set-property --file server.properties --bulk /etc/bds-property-definitions.json
 
 export LD_LIBRARY_PATH=.
 
+bash /opt/echoStorage.sh
+
 echo "Starting Bedrock server..."
 exec ./bedrock_server-${VERSION}
+
+bash /opt/echoStorage.sh
